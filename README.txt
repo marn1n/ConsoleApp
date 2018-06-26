@@ -1,4 +1,4 @@
-You must have Maven installed in order to proceed.
+You must have Maven installed in order to proceed. And to connect to MySQL database go to src/main/java/app/DBUtilities.java and in String url change existing user and password to yours.
 
 To run the command-line application:
 1. download and unzip
