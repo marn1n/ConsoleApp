@@ -42,7 +42,7 @@ public class TotalPLN {
                     String currency = (String) entry.getKey();
                     Number rate = (Number) entry.getValue();
                     double rateDoubleFormat = rate.doubleValue();
-                    if (currency.equals(inputCurrency)) {
+                    if (currency.equalsIgnoreCase(inputCurrency)) {
                         double amount = total * rateDoubleFormat;
                         double rounded = (double) Math.round(amount * 100) / 100;
                         System.out.println("Total amount spent is " + rounded + " " + currency);
